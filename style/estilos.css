@@ -1,0 +1,25 @@
+/* Selector de tipo: ID*/
+#Inicio {
+    color: blueviolet;
+}
+
+/* Selector de tipo: Class*/ 
+.encabezado {
+    color: green;
+}
+
+/* Selector de tipo: Anidado*/
+div h2{
+    color: brown;
+}
+
+/* Selector de tipo: Elemento o Etiqueta*/
+h1 {
+    color: aqua;
+}
+
+/* Selector de tipo: Universal*/
+* {
+    color: gray;
+}
+

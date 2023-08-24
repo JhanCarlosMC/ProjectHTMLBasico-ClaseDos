@@ -10,23 +10,25 @@
 
     <title>Proyecto HTML TEST</title>
 
+    <link rel="stylesheet" href="style/estilos.css">
+
 </head>
 
 <body>
 
-    <div>
+    <div id="header">
         <!-- Explicacion etiquetas -->
-        <h1 id="Inicio">Titulo Principal</h1>
+        <h1 id="Inicio" class="encabezado">Titulo Principal</h1>
 
     </div>
-
+    <h2>Formularios</h2>
     <div>
         <h2>Formularios</h2>
 
         <form action="">
             <fieldset>
                 <legend>Datos Usuario</legend>
-                <label for="id_usuario">Nombre</label><br>
+                <label for="id_usuario" class="form">Nombre</label><br>
                 <input type="text" name="dato_usuario" id="id_usuario" placeholder="Ingrese su nombre" autofocus>
 
                 <br><br>
@@ -34,11 +36,11 @@
                 <input type="password" name="pass" id="pass" required>
 
                 <br><br>
-                <label for="email">Correo</label><br>
+                <label for="email" class="form">Correo</label><br>
                 <input type="email" name="email" id="email" value="ejemplo@gmail.com">
 
                 <br><br>
-                <label for="edad">Edad</label><br>
+                <label for="edad" class="form">Edad</label><br>
                 <input type="number" name="edad" id="edad" max="99" min="18">
             </fieldset>
 
