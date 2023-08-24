@@ -22,57 +22,86 @@
 
     <div>
         <h2>Formularios</h2>
-        
+
         <form action="">
-            <label for="usuario">Usuario</label><br>
-            <input type="text" name="usuario" id="usuario" placeholder="Ingrese el usuario">
+            <fieldset>
+                <legend>Datos Usuario</legend>
+                <label for="id_usuario">Nombre</label><br>
+                <input type="text" name="dato_usuario" id="id_usuario" placeholder="Ingrese su nombre" autofocus>
+
+                <br><br>
+                <label for="pass">Contraseña</label><br>
+                <input type="password" name="pass" id="pass" required>
+
+                <br><br>
+                <label for="email">Correo</label><br>
+                <input type="email" name="email" id="email" value="ejemplo@gmail.com">
+
+                <br><br>
+                <label for="edad">Edad</label><br>
+                <input type="number" name="edad" id="edad" max="99" min="18">
+            </fieldset>
 
             <br><br>
-            <label for="pass">Constraseña</label><br>
-            <input type="password" name="pass" id="pass" required>
+            <fieldset>
+                <legend>Preguntas Multiples</legend>
+                <br>
+                <label for=""></label>Seleccione sus equipos favoritos<br>
+                <input type="checkbox" name="Barcelona" value="Barcelona">
+                <label for="">Barcelona</label><br>
+
+                <input type="checkbox" name="RealMadrid" value="">
+                <label for="">Real Madrid</label><br>
+
+                <input type="checkbox" name="Atletico">
+                <label for="">Atletico</label><br>
+
+                <br>
+                <label for="">Elija su rango de edad</label><br>
+
+                <input type="radio" name="r1" id="r1">
+                <label for="r1">0-15</label><br>
+
+                <input type="radio" name="r1" id="r2" value="">
+                <label for="r2">16-24</label><br>
+
+                <input type="radio" name="r1" id="r3">
+                <label for="r2">25-40</label>
+            </fieldset>
 
             <br><br>
-            <label for="email">Correo</label><br>
-            <input type="email" name="email" id="email">
-
-
-
-            <br><br>
-            <label for=""></label>Seleccione sus equipos favoritos<br>
-            <input type="checkbox" name="Barcelona" value="Barcelona">
-            <label for="">Barcelona</label><br>
-
-            <input type="checkbox" name="RealMadrid" value="">
-            <label for="">Real Madrid</label><br>
-
-            <input type="checkbox" name="Atletico">
-            <label for="">Atletico</label><br>
-
-            <br><br>
-            <label for="">Elija su rango de edad</label><br>
-
-            <input type="radio" name="r1" id="r1">
-            <label for="r1">0-15</label><br>
-
-            <input type="radio" name="r1" id="r2" value="">
-            <label for="r2">16-24</label><br>
-
-            <input type="radio" name="r1" id="r3">
-            <label for="r2">25-40</label>
-
-            <br><br>
-            <label for="textarea">Ingrese una descripcion propia</label>
+            <label for="textarea">Ingrese una descripcion propia</label><br>
             <textarea name="textarea" id="textarea" cols="40" rows="5" placeholder="Ingrese su texto"></textarea>
+
+            <br><br>
+            <label for="lista">Menu Desplegable</label><br>
+            <select name="listInfo" id="lista">
+                <option value="javascrip">JS</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+            </select>
+
+            <br><br>
+            <label for="lista">Lista de Elementos</label><br>
+            <select name="listInfo" id="lista" size="5" multiple>
+                <option value="javascrip">JS</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+            </select>
 
             <br><br>
             <input type="submit" name="submit" id="submit" value="Enviar">
             <input type="reset" value="Reset">
+
         </form>
         <br>
     </div>
 
     <div>
-        <br><hr>
+        <br>
+        <hr>
         <h2 style="color: Blue; background-color: black;">Ejemplo Tabla</h2>
 
         <table border="1" style="border-style: dashed; width: 100%;">
@@ -200,7 +229,7 @@
             <td colspan="3">Fila 3, Celdas 1 a 3 fusionadas</td>
         </tr>
     </table>
-
+    <!-- -->
 </body>
 
 </html>
