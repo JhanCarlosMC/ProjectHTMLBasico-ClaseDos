@@ -19,8 +19,137 @@
     <div id="header">
         <!-- Explicacion etiquetas -->
         <h1 id="Inicio" class="encabezado">Titulo Principal</h1>
-
+        <h1>Hola</h1>
     </div>
+
+    <div class="parrafo">
+        <h2>Titulo Secundario</h2>
+        <p class="texto">Parrafo del titulo principal. <br> Hola </p>
+        <p>Parrafo del titulo principal</p>
+    </div>
+
+    <h2 class="t3">Titulo Tres</h2>
+    <p>Ejemplo <b>negrita</b> </p>
+    <p>Ejemplo <strong>importante</strong> </p>
+
+    <hr>
+
+    <p>Ejemplo <i>Cursiva</i> </p>
+    <p>Ejemplo <em>Enfatizar</em> </p>
+
+    <hr>
+
+    <p>Ejemplo <small>Pequeño</small> </p>
+    <p>Ejemplo <del>Delete</del> </p>
+    <p>Ejemplo <sub>Subindice</sub> y <sup>Indice</sup></p>
+    <p>Ejemplo <ins>Subrayado</ins> </p>
+
+    <h4>Titulo Cuatro</h4>
+
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+
+    <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+
+    <!--
+    <h5>Titulo Cinco</h5>
+    <h6>Titulo Seis</h6>
+    -->
+
+    <br>
+    <!--Uso de la etiqueta "a" para redirigir a una pagina externa-->
+    <a href="https://es.wikipedia.org/wiki/Wikipedia:Bienvenidos">Enlace Externo</a>
+    <!--Uso de la etiquta "a" para redirigir a una pagina propia de mi proyecto-->
+    <a href="ModuloInterno/ejemplo.html">Enlace interno</a>
+
+    <a href="#Inicio">Seccion Uno</a>
+    <br><br>
+    <img src="imagenes/Etiquetas.png" alt="imagen de ejemplo" width="10px">
+
+    <div>
+        <br>
+        <hr>
+        <h2 style="color: Blue; background-color: black;">Ejemplo Tabla</h2>
+
+        <table class="table" border="1">
+            <caption>Ejemplo Tabla HTML</caption>
+            <thead>
+                <tr>
+                    <th style="width: 40%;">Titulo 1</th>
+                    <th style="width: 20%;">Titulo 2</th>
+                    <th style="width: 20%;">Titulo 3</th>
+                    <th style="width: 20%;">Titulo 4</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" style="font-size: x-large;">Dato 1</td>
+                    <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Dato 2</td>
+                    <td><a href="">Enlace</a></td>
+                    <td>Dato 4</td>
+                </tr>
+
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td><img src="imagenes/Etiquetas.png" alt="Imagen ejemplo" width="100px"></td>
+
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><i>
+                            <center>footer</center>
+                        </i></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, qui! Fuga laborum sint magnam
+                        vitae illo, odio ipsam necessitatibus dolor dolores recusandae iste facilis praesentium officiis
+                        odit illum distinctio eum.</td>
+                    <td><img src="imagenes/Etiquetas.png" alt="Imagen ejemplo" width="100px"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <table border="1">
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Fila 1, Celda 1</td>
+            <td colspan="2">Fila 1, Celdas 2 y 3 fusionadas</td>
+        </tr>
+        <tr>
+            <td>Subfila 2, Celda 1</td>
+            <td>Subfila 2, Celda 2</td>
+        </tr>
+        <tr>
+            <td colspan="3">Fila 3, Celdas 1 a 3 fusionadas</td>
+        </tr>
+    </table>
+    <!-- -->
+
     <h2>Formularios</h2>
     <div>
         <h2>Formularios</h2>
@@ -101,137 +230,6 @@
         <br>
     </div>
 
-    <div>
-        <br>
-        <hr>
-        <h2 style="color: Blue; background-color: black;">Ejemplo Tabla</h2>
-
-        <table border="1" style="border-style: dashed; width: 100%;">
-            <caption>Ejemplo Tabla HTML</caption>
-            <thead>
-                <tr>
-                    <th style="width: 40%;">Titulo 1</th>
-                    <th style="width: 20%;">Titulo 2</th>
-                    <th style="width: 20%;">Titulo 3</th>
-                    <th style="width: 20%;">Titulo 4</th>
-                </tr>
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2" style="font-size: x-large;">Dato 1</td>
-                    <td style="font-family: Verdana, Geneva, Tahoma, sans-serif">Dato 2</td>
-                    <td><a href="">Enlace</a></td>
-                    <td>Dato 4</td>
-                </tr>
-
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                    <td><img src="imagenes/Etiquetas.png" alt="Imagen ejemplo" width="100px"></td>
-
-                </tr>
-
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4"><i>
-                            <center>footer</center>
-                        </i></td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <hr>
-
-        <table>
-            <tbody>
-                <tr>
-                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, qui! Fuga laborum sint magnam
-                        vitae illo, odio ipsam necessitatibus dolor dolores recusandae iste facilis praesentium officiis
-                        odit illum distinctio eum.</td>
-                    <td><img src="imagenes/Etiquetas.png" alt="Imagen ejemplo" width="100px"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div>
-        <h2>Titulo Secundario</h2>
-        <p>Parrafo del titulo principal. <br> Hola </p>
-        <p>Parrafo del titulo principal</p>
-    </div>
-
-    <h3>Titulo Tres</h3>
-    <p>Ejemplo <b>negrita</b> </p>
-    <p>Ejemplo <strong>importante</strong> </p>
-
-    <hr>
-
-    <p>Ejemplo <i>Cursiva</i> </p>
-    <p>Ejemplo <em>Enfatizar</em> </p>
-
-    <hr>
-
-    <p>Ejemplo <small>Pequeño</small> </p>
-    <p>Ejemplo <del>Delete</del> </p>
-    <p>Ejemplo <sub>Subindice</sub> y <sup>Indice</sup></p>
-    <p>Ejemplo <ins>Subrayado</ins> </p>
-
-    <h4>Titulo Cuatro</h4>
-
-    <ul>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-    </ul>
-
-    <ol>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-    </ol>
-
-    <!--
-    <h5>Titulo Cinco</h5>
-    <h6>Titulo Seis</h6>
-    -->
-
-    <br>
-    <!--Uso de la etiqueta "a" para redirigir a una pagina externa-->
-    <a href="https://es.wikipedia.org/wiki/Wikipedia:Bienvenidos">Enlace Externo</a>
-
-    <br>
-    <!--Uso de la etiquta "a" para redirigir a una pagina propia de mi proyecto-->
-    <a href="ModuloInterno/ejemplo.html">Enlace interno</a>
-
-    <br>
-    <a href="#Inicio">Seccion Uno</a>
-    <br><br>
-    <img src="imagenes/Etiquetas.png" alt="imagen de ejemplo" width="10px">
-
-
-    <table border="1">
-        <tr>
-            <th>Encabezado 1</th>
-            <th>Encabezado 2</th>
-            <th>Encabezado 3</th>
-        </tr>
-        <tr>
-            <td rowspan="2">Fila 1, Celda 1</td>
-            <td colspan="2">Fila 1, Celdas 2 y 3 fusionadas</td>
-        </tr>
-        <tr>
-            <td>Subfila 2, Celda 1</td>
-            <td>Subfila 2, Celda 2</td>
-        </tr>
-        <tr>
-            <td colspan="3">Fila 3, Celdas 1 a 3 fusionadas</td>
-        </tr>
-    </table>
-    <!-- -->
 </body>
 
 </html>

@@ -1,25 +1,73 @@
 /* Selector de tipo: ID*/
 #Inicio {
-    color: blueviolet;
+    color: rgb(171, 42, 171);
 }
 
 /* Selector de tipo: Class*/ 
 .encabezado {
-    color: green;
+    color: #59d218;
 }
 
-/* Selector de tipo: Anidado*/
+/* Selector de tipo: Clase Anidada*/
+.parrafo .texto{
+    color: hsl(234, 100%, 31%);
+}
+
+/* Selector de tipo: Atributo*/
+input[type="email"]{
+    color: rgba(220, 20, 60, 0.5);
+}
+
+/* Selector de tipo: Clase + Elemento*/
+h2.t3{
+    color: deeppink;
+}
+
+/* Selector de tipo: Descendencia*/
 div h2{
     color: brown;
 }
 
 /* Selector de tipo: Elemento o Etiqueta*/
-h1 {
+h2 {
     color: aqua;
 }
 
 /* Selector de tipo: Universal*/
 * {
-    color: gray;
+    color: black;
 }
 
+/**/
+h1{
+    display: inline;
+    height: 80px;
+    width: 350px;
+    border-width: 0.25em;
+    border-style: solid;
+    font-size: 40px;
+    padding: 10px;
+    margin: 15px 10px;
+
+    box-sizing: border-box;
+}
+
+h2{
+    border-left: 0.25rem solid;
+    padding-left: 2px;
+    border-radius: 5px;
+}
+
+/* border="1" style="border-style: 
+dashed; width: 100%;"*/
+.table{
+    border-style: dashed;
+    width: 80vw;
+}
+
+.texto{
+    border: 3px dashed black;
+    border-radius: 40px;
+    
+    padding: 5px 10px;
+}
