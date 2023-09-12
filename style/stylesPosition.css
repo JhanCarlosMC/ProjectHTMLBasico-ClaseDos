@@ -1,0 +1,54 @@
+.container{
+    width: 500px;  
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    position: relative;
+}
+
+div{
+    width: 60px;  
+    height: 60px;
+    border: 1px solid black;
+}
+
+.static{
+    background-color: aqua;
+
+    position: static;
+
+}
+
+.relative{
+    background-color: blueviolet;
+
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+
+    z-index: -1;
+}
+
+.absolute{
+    background-color: darkgoldenrod;
+
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+}
+
+.fixed{
+    background-color: darkmagenta;
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky{
+    background-color: lawngreen;
+
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
