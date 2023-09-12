@@ -1,0 +1,20 @@
+/*Estilos Navegacion Header*/
+.header{
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    padding: 10px;
+
+    position: sticky;
+    top: 0px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}

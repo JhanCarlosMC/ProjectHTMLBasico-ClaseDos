@@ -1,61 +1,8 @@
+@import 'header.css';
+@import 'banner.css';
+@import 'footer.css';
+
 /*Estilos body*/
 body{
     margin: 0px;
-}
-
-/*Estilos Navegacion Header*/
-header{
-    background-color: rgb(26, 26, 26);
-    text-align: center;
-    padding: 10px;
-
-    position: sticky;
-    top: 0px;
-}
-
-.menu{
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.menu a{
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-}
-
-/*Estilos Banner*/
-.bannerContainer{
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bannerContainer img{
-    width: 100%;
-    height: auto;
-}
-
-footer{
-    background-color: rgb(26, 26, 26);  
-    color: #fff;
-    padding: 10px 0px;
-}
-
-.footerContent{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-
-.footerSocialMedia{
-    text-align: center;
-}
-
-.footerSocialMedia a{
-    padding: 10px;
 }
