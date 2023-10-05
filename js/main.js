@@ -268,7 +268,7 @@ function validarPassword(nickName, passwordValidar) {
         if (usuario.nickName === nickName) {
             if (passwordValidar != usuario.password) {
                 console.log("La contraseña no corresponde");
-            } else{
+            } else {
                 console.log("Las constraseñas son iguales");
 
             }
@@ -277,10 +277,10 @@ function validarPassword(nickName, passwordValidar) {
 }
 
 
-ejemploClass();
-function ejemploClass(){
+// ejemploClass();
+function ejemploClass() {
     class Producto {
-        constructor(nombre, id, marca, precio){
+        constructor(nombre, id, marca, precio) {
             this.nombre = nombre;
             this.id = id;
             this.marca = marca;
@@ -300,3 +300,58 @@ function ejemploClass(){
         console.log(productoUno[key]);
     }
 }
+
+//------------------Funciones
+
+//Basico
+// saludar(); //Llamado
+function saludar() {
+    console.log("Hoola Mundo");
+}
+
+//Con parametros
+let apellidoIngresado = "Martinez";
+// saludoPersonalizado("Jhan", apellidoIngresado);
+function saludoPersonalizado(nombre, apellido) {
+    console.log(`Hola ${nombre} ${apellido}`);
+}
+
+//Con retorno
+// let resultado = saludoRetorno("3214"); //Llamado
+
+// console.log(resultado);
+
+function saludoRetorno(passValidar) {
+    let mensaje = "";
+
+    if ("1234" === passValidar) {
+        mensaje = "La contraseña es valida"
+    } else {
+        mensaje = "La contraseña No coincide"
+    }
+    return mensaje;
+}
+
+//---------------Arrow Function
+
+//Declaracion de funcion en flecha
+const mensaje = (a) => console.log(`Mensaje en Arrow ${a}`);
+// mensaje("Function");
+
+//Retorno
+const suma = (a, b) => a+b;
+let resultado = suma(3,7);
+// console.log(suma(3,7));
+
+//
+const operaciones = (a, b, operacion) => {
+    if (operacion === "+") {
+        return a + b;
+    } else if (operacion === "-"){
+        return a - b;
+    }else if(operacion === "*"){
+        return a * b;
+    }
+};
+
+// console.log(operaciones(10, 2, "*"));
