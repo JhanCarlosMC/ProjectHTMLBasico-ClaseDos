@@ -6,3 +6,8 @@
 body {
     margin: 0px;
 }
+
+.lista-productos{
+    display: flex;
+    justify-content: space-around;
+}

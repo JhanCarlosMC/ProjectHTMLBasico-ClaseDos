@@ -8,13 +8,17 @@
 // 5555
 // 55555
 
-trianguloRectangulo(7);
-function trianguloRectangulo(tam){
-    let fila = "";
+// trianguloRectangulo(7);
+// function trianguloRectangulo(tam){
+//     let fila = "";
 
-    for(let i = 0; i < tam; i++){
+//     for(let i = 0; i < tam; i++){
 
-        fila += tam;
-        console.log(fila);
-    }
-}
+//         fila += tam;
+//         console.log(fila);
+//     }
+// }
+
+const nombreUsuario = document.getElementById("nombre-usuario");
+
+nombreUsuario.textContent = localStorage.getItem("nombreUsuario");

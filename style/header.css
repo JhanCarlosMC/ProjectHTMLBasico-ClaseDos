@@ -6,6 +6,7 @@
 
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .menu__list {
@@ -27,6 +28,10 @@
 
 .menu__item:hover {
     background-color: rgb(86, 86, 86);
+}
+
+#nombre-usuario{
+    color: #fff;
 }
 
 @media screen and (max-width: 480px) {

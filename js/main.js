@@ -339,17 +339,17 @@ const mensaje = (a) => console.log(`Mensaje en Arrow ${a}`);
 // mensaje("Function");
 
 //Retorno
-const suma = (a, b) => a+b;
-let resultado = suma(3,7);
+const suma = (a, b) => a + b;
+let resultado = suma(3, 7);
 // console.log(suma(3,7));
 
 //
 const operaciones = (a, b, operacion) => {
     if (operacion === "+") {
         return a + b;
-    } else if (operacion === "-"){
+    } else if (operacion === "-") {
         return a - b;
-    }else if(operacion === "*"){
+    } else if (operacion === "*") {
         return a * b;
     }
 };
