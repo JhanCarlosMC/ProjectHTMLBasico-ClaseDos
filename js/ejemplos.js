@@ -1,24 +1,21 @@
+const login = JSON.parse(localStorage.getItem("login"));
 
-//Construir un algoritmo para mostrar un triángulo rectángulo
-//dependiendo de un número ingresado por el usuario:
-//Si se ingresa el 5:
-// 5
-// 55
-// 555
-// 5555
-// 55555
+if (login.logeado) {
+    const nombreUsuario = document.getElementById("nombre-usuario");
+    const itemLogin = document.getElementById("login_item");
+    const itemNombre = document.getElementById("item_nombre");
+    const cerrarSesion = document.getElementById("cerrar_sesion__link");
+    const cerrarSesionitem = document.getElementById("cerrar_sesion");
 
-// trianguloRectangulo(7);
-// function trianguloRectangulo(tam){
-//     let fila = "";
 
-//     for(let i = 0; i < tam; i++){
+    nombreUsuario.textContent = login.nombre;
+    login.logeado = false;
+    localStorage.setItem("login", JSON.stringify(login));
 
-//         fila += tam;
-//         console.log(fila);
-//     }
-// }
 
-const nombreUsuario = document.getElementById("nombre-usuario");
+    itemLogin.style.display = "none";
+    itemNombre.className = "menu__item";
 
-nombreUsuario.textContent = localStorage.getItem("nombreUsuario");
+    cerrarSesion.textContent = "Cerrar Sesion";
+    cerrarSesionitem.className = "menu__item";
+}

@@ -13,7 +13,7 @@
 
     <h1>Productos</h1>
 
-    <div class="lista-productos">
+    <div id ="lista-productos" class="lista-productos">
         <div class="producto">
             <h4>Tenis</h4>
             <img src="" alt="Imagen de tenis">
@@ -39,6 +39,16 @@
         <div id="productos-carrito">
 
         </div>
+
+        <form id="formulario-imagen">
+            <input type="file" id="imagen" accept="image/*">
+            <button type="submit">Guardar Imagen</button>
+        </form>
+        <br><br>
+        <button onclick="cargarImgagen()">Cargar Imagen</button>
+    
+        <img id="imagen-mostrada" src="" alt="Imagen cargada">
+    
 
     <script src="js/producto.js"></script>
 </body>
