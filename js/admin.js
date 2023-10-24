@@ -2,37 +2,44 @@
 let listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
 const formularioLogin = document.getElementById("login");
 
+const admin = {
+    user: "admin@gmail.com",
+    pass: "1234",
+};
+
 formularioLogin.addEventListener("submit", function (event) {
     event.preventDefault();
     const emailValidar = document.getElementById("email").value;
     const passwordValidar = document.getElementById("pass").value;
     let usuarioObtenido;
 
-    listUsuarios.forEach(usuario => {
+    if (admin.user === emailValidar && admin.pass === passwordValidar) {
+        window.location.href = "/administracion.html";
+    } else {
+        listUsuarios.forEach(usuario => {
 
-        if (usuario.correo === emailValidar) {
-            usuarioObtenido = usuario;
-        }
-    });
+            if (usuario.correo === emailValidar) {
+                usuarioObtenido = usuario;
+            }
+        });
 
-    if (usuarioObtenido) {
-        if (usuarioObtenido.password === passwordValidar) {
-            let login = {
-                logeado: true,
-                nombre: usuarioObtenido.nombre
-            };
+        if (usuarioObtenido) {
+            if (usuarioObtenido.password === passwordValidar) {
+                let login = {
+                    logeado: true,
+                    nombre: usuarioObtenido.nombre
+                };
 
-            localStorage.setItem("login", JSON.stringify(login));
-            window.location.href = "/index.html";
+                localStorage.setItem("login", JSON.stringify(login));
+                window.location.href = "/index.html";
+            } else {
+                alert("Contraseña Incorrecta");
+            }
         } else {
-            alert("Contraseña Incorrecta");
+            alert("Correo no encontrado");
         }
-    }else{
-        alert("Correo no encontrado");
     }
 
-    // console.log(usuarioObtenido);
-    // const nombreUsuario = document.getElementById("id_user").value;
 });
 
 function mostrarUsuarios() {

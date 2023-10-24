@@ -11,7 +11,10 @@
 
 <body>
 
-    <h1>Productos</h1>
+    <a href="index.html">
+        <h1>Productos</h1>
+
+    </a>
 
     <div id ="lista-productos" class="lista-productos">
         <div class="producto">
@@ -22,16 +25,6 @@
 
             <button onclick="agregarProductoCarrito('1')">Agregar al Carrito</button>
         </div>
-
-        <br>
-        <div class="producto">
-            <h4>Camisa</h4>
-            <img src="" alt="Imagen de camisa">
-            <p>Precio: 90000</p>
-            <p id="dispo-2">Disponibilidad: 10</p>
-
-            <button onclick="agregarProductoCarrito('2')">Agregar al Carrito</button>
-        </div>
     </div>
 
 
@@ -39,16 +32,6 @@
         <div id="productos-carrito">
 
         </div>
-
-        <h1>Ejemplo imagen</h1>
-        <form id="formulario-imagen">
-            <input type="file" id="imagen" accept="image/*">
-            <button type="submit">Guardar Imagen</button>
-        </form>
-        <br><br>
-        <button onclick="cargarImagen()">Cargar Imagen</button>
-    
-        <img id="imagen-mostrada" src="" alt="Imagen cargada">
     
 
     <script src="js/producto.js"></script>

@@ -14,11 +14,15 @@ class Producto {
     }
 }
 
+let listProductos = [];
+listProductos = JSON.parse(localStorage.getItem("listProductos"));
+cargarProductos();
+
 function crearProducto(id, nombre, descripcion, imagenURL, precio, cantidadDisponible) {
     const divProducto = document.createElement("div");
     divProducto.id = "contenedor-producto"+id;
 
-    const h4Producto = document.createElement("h4");
+    const h4Producto = document.createElement("h3");
     h4Producto.textContent = nombre;
 
     const imgProducto = document.createElement("img");
@@ -27,13 +31,13 @@ function crearProducto(id, nombre, descripcion, imagenURL, precio, cantidadDispo
     imgProducto.width = "200";
 
     const descripcionProducto = document.createElement("p");
-    descripcionProducto.textContent = "Descripcion "+descripcion;
+    descripcionProducto.innerHTML = "<strong>Descripcion:</strong> "+descripcion;
 
     const precioProducto = document.createElement("p");
-    precioProducto.textContent = `$${precio} COP`;
+    precioProducto.innerHTML = `<strong>Precio</strong>: $${precio} COP`;
 
     const disponibilidadProducto = document.createElement("p");
-    disponibilidadProducto.textContent = `Disponibles: ${cantidadDisponible} Unidad(es)`;
+    disponibilidadProducto.innerHTML = `<strong>Disponibles:</strong> ${cantidadDisponible} Unidad(es)`;
 
     divProducto.appendChild(h4Producto);
     divProducto.appendChild(imgProducto);
@@ -68,7 +72,10 @@ formProducto.addEventListener("submit", function (e){
             //Obtenemos los datos del archivo cargado en forma de URL
             imagenURL = evento.target.result; //Trae los datos en una cadena de caracteres ASCII
 
-            const divProducto = crearProducto(0, nombreProducto, descripcionProducto, imagenURL, cantidadProducto, precioProducto);
+            let newProduct = new Producto(0,nombreProducto,descripcionProducto,imagenURL, precioProducto, cantidadProducto);
+            listProductos.push(newProduct);
+            localStorage.setItem("listProductos", JSON.stringify(listProductos));
+            const divProducto = crearProducto(0, nombreProducto, descripcionProducto, imagenURL, precioProducto,cantidadProducto);
 
             contProductos.appendChild(divProducto);
         };
@@ -76,3 +83,15 @@ formProducto.addEventListener("submit", function (e){
 
     formProducto.reset();
 });
+
+function cargarProductos(){
+    let contenedorProductosCargados = document.getElementById("contenedor-productos");
+    console.log(listProductos);
+    if(listProductos){
+        listProductos.forEach(producto => {
+            let divProducto = crearProducto(producto.id, producto.nombre, producto.descripcion, producto.imagen, producto.precio, producto.cantidadDisponible);
+    
+            contenedorProductosCargados.appendChild(divProducto);
+        });
+    }
+}
