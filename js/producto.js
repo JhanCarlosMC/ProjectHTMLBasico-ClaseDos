@@ -100,13 +100,12 @@ formularioImagen.addEventListener('submit', function (e) {
         };
 
         alert('Imagen almacenada correctamente');
-
     } else {
         alert('Por favor, seleccione una imagen antes de enviar el formulario.');
     }
 });
 
-function cargarImgagen() {
+function cargarImagen() {
     // Recuperar y mostrar la imagen al cargar la página
     const imagenMostrada = document.getElementById('imagen-mostrada');
     const imagenAlmacenada = localStorage.getItem('imagen');
