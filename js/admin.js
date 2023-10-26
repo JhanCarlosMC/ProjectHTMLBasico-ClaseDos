@@ -14,7 +14,7 @@ formularioLogin.addEventListener("submit", function (event) {
     let usuarioObtenido;
 
     if (admin.user === emailValidar && admin.pass === passwordValidar) {
-        window.location.href = "/administracion.html";
+        window.location.href = "administracion.html";
     } else {
         listUsuarios.forEach(usuario => {
 
