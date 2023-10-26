@@ -10,13 +10,13 @@ class Producto {
 
 let productoDos = new Producto("2", "Camisa", "imgCamisa.png", 90000, 10);
 
-let productoUno = {
-    id: "1",
-    nombre: "Tenis",
-    imagen: "imgTenis.png",
-    precio: 120000,
-    cantidadDisponible: 5,
-};
+// let productoUno = {
+//     id: "1",
+//     nombre: "Tenis",
+//     imagen: "imgTenis.png",
+//     precio: 120000,
+//     cantidadDisponible: 5,
+// };
 
 let listaProductos = [];
 listaProductos.push(productoDos);

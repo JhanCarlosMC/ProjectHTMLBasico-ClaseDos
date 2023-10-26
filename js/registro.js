@@ -1,5 +1,5 @@
-class Usuario{
-    constructor(nombre, correo, password){
+class Usuario {
+    constructor(nombre, correo, password) {
         this.nombre = nombre;
         this.correo = correo;
         this.password = password;
@@ -7,11 +7,14 @@ class Usuario{
 }
 
 let listUsuarios = [];
-listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
+if (JSON.parse(localStorage.getItem("listUsuarios"))) {
+    listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
+}
+
 
 const formRegistro = document.getElementById("registro");
 
-formRegistro.addEventListener("submit", function(e){
+formRegistro.addEventListener("submit", function (e) {
     e.preventDefault();
     const nombreObtenido = document.getElementById("name").value;
     const correoObtenido = document.getElementById("email").value;

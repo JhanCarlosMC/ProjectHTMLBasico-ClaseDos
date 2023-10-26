@@ -15,3 +15,11 @@ body {
 .body{
     background-color: #6EA4E6;
 }
+
+.contenedor-productos{
+    display: flex;
+}
+
+.producto{
+    padding: 10px;
+}
