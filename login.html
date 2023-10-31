@@ -5,10 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="stylesheet" href="style/stylesIndex.css">
 </head>
 
 <body>
 
+    <center>
+        <h1>Login</h1>
+    </center>
+
+    <header class="header">
+        <nav class="menu">
+
+            <div class="menu-mobile">
+                <div class="menu-mobile__line"></div>
+                <div class="menu-mobile__line"></div>
+                <div class="menu-mobile__line"></div>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#jugadores" class="menu__link">Jugadores Famosos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="carrito.html" class="menu__link">Carrito de compras</a>
+                </li>
+                <li class="menu__item">
+                    <a href="productos.html" class="menu__link">Productos</a>
+                </li>
+                <li id="login_item" class="menu__item">
+                    <a href="login.html" class="menu__link">Login</a>
+                </li>
+
+                <li id="item_nombre">
+                    <p id="nombre-usuario"></p>
+                </li>
+
+                <li id="cerrar_sesion">
+                    <a href="index.html" class="menu__link" id="cerrar_sesion__link"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <br>
     <form id="login">
         <fieldset>
             <legend>Inicio de Sesion</legend>

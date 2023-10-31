@@ -12,6 +12,17 @@ body {
     justify-content: space-around;
 }
 
+.lista-carrito{
+    display: flex;
+    flex-direction: column;
+}
+
+.contener-producto-carrito{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+
 .body{
     background-color: #6EA4E6;
 }
